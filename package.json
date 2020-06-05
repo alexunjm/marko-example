@@ -9,6 +9,7 @@
   },
   "private": true,
   "dependencies": {
+    "@icon/font-awesome": "^4.7.0-2",
     "marko": "^4.21.8"
   },
   "devDependencies": {

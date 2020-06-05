@@ -1,0 +1,41 @@
+<div.social-network>
+    <address.red>@hogardeleite</address>
+    <div.links>
+        <a.icon href="https://www.instagram.com/hogardeleite/">
+            <i.instagram/>
+        </a>
+        <a.icon href="https://www.facebook.com/hogar.deleite.1">
+            <i.facebook/>
+        </a>
+    </div>
+</div>
+style {
+    .icon {
+        display: inline;
+        width: 32px;
+        height: 32px;
+    }
+    .social-network {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #444;
+        width: 300px;
+        max-width: 100%;
+    }
+    .links > a.icon > *::after {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 32px;
+        float: left;
+        margin: 0 6px 0 0;
+        background-size: cover;
+    }
+    .instagram::after {
+        background: url(./instagram.svg) no-repeat;
+    }
+    .facebook::after {
+        background: url(./facebook.svg);
+    }
+}
